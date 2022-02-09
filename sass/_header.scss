@@ -1,0 +1,193 @@
+header {
+  background-color: transparent;
+  .navbar {
+    padding: 1.4rem 0 .55rem;
+    display: flex;
+    background-color: transparent!important;
+    .container {
+      padding: 0;
+    }
+
+    .navbar-brand {
+      justify-content: flex-start;
+      font-size: 26px;
+      color: $white;
+      padding: .5rem 0;
+      div {
+        display: inline-block;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+      }
+      span {
+        display: inline-block;
+        font-size: 9px;
+        color: $logo-color;
+        line-height: .65rem;
+        padding-left: 5px;
+        letter-spacing: 1.1px;
+      }
+    }
+    #navbarNav {
+      justify-content: flex-end;
+      font-weight: 500;
+      .navbar-nav {
+        .nav-item {
+          margin-left: 1.45em;
+        }
+        .nav-link{
+          color: $white;
+          padding: .3rem 0 .5rem;
+          letter-spacing: .22px;
+        }
+        .nav-item{
+          &:first-child {
+            &:hover::after, &:active::after, &:focus::after {
+            @include border;
+              margin: 0 0 0 22px;
+            }
+            &:hover::before, &:active::before, &:focus::before {
+              @include border;
+              margin: 2.3rem .3rem auto 0;
+            }
+          }
+          &:nth-child(6n-4) {
+            &:hover::after, &:active::after, &:focus::after {
+              @include border;
+              margin: 0 0 0 1.825rem;
+            }
+            &:hover::before, &:active::before, &:focus::before {
+              @include border;
+              margin: 2.3rem .3rem auto .45rem;
+            }
+          }
+          &:nth-child(6n-3) {
+            &:hover::after, &:active::after, &:focus::after {
+              content: "";
+              @include border;
+              margin: 0 0 0 1.35rem;
+            }
+            &:hover::before, &:active::before, &:focus::before {
+              @include border;
+              margin: 2.3rem .3rem auto auto;
+            }
+          }
+          &:nth-child(6n-2) {
+            &:hover::after, &:active::after, &:focus::after {
+              @include border;
+              margin: 0 0 0 2.6rem;
+            }
+            &:hover::before, &:active::before, &:focus::before {
+              @include border;
+              margin: 2.3rem .3rem auto 1.25rem;
+            }
+          }
+          &:nth-child(6n-1) {
+            &:hover::after, &:active::after, &:focus::after {
+              @include border;
+              margin: 0 0 0 1.55rem;
+            }
+            &:hover::before, &:active::before, &:focus::before {
+              @include border;
+              margin: 2.3rem .3rem auto .15rem;
+            }
+          }
+          &:nth-child(6n) {
+            &:hover::after, &:active::after, &:focus::after {
+              @include border;
+              margin: 0 0 0 1.75rem;
+            }
+            &:hover::before, &:active::before, &:focus::before {
+              @include border;
+              margin: 2.3rem .2rem auto .35rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fix {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .nav_back {
+    background-color: $head-background!important;
+  }
+  #introduce {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: top;
+    background-image: url("../img/images/header.png");
+    .overlay {
+      background-color: $overlay-bg;
+      z-index: 1;
+      padding-bottom: 1.69em;
+      .left_intro {
+        padding: 1.96em 0 3em 15px;
+        .blue_text {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 1.4px;
+        }
+        }
+        h1 {
+          color: $white;
+          margin-top: 1.15rem;
+          margin-bottom: .68rem;
+          letter-spacing: .7px;
+          line-height: .99;
+          font-size: 3rem;
+        }
+        p {
+          color: $grey;
+          margin-bottom: 4.3rem;
+          margin-top: 1.38em;
+          line-height: 1.49;
+          letter-spacing: .007px;
+          font-size: 18px;
+        }
+        span {
+          a {
+            @include button-style();
+            padding: 1.15em 1.855em;
+          }
+          a:hover {
+            @include button-active;
+          }
+          a:active {
+           @include button-active;
+          }
+          a:focus {
+           @include button-active;
+          }
+        }
+        span a:first-child {
+          margin-right: 1.2rem;
+        }
+      span a:last-child {
+        padding: 1.1em 2.09em;
+      }
+      }
+      .intro {
+        padding: 2.3em 0 3em 0;
+      }
+      .intro_scroll {
+        padding-top: 7.7em;
+      }
+      .right_intro {
+        img {
+          z-index: 1;
+          position: absolute;
+          margin-top: -2px;
+          margin-left: -22px;
+        }
+      }
+    }
+  }
+.theme_propose {
+  width: 100%;
+  background: $black;
+}
+

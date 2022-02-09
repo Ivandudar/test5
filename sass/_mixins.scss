@@ -1,0 +1,106 @@
+@mixin price-active{
+  .prices {
+    h4 {
+      color: $price-blue;
+      transition: 1s;
+      transition-timing-function: ease-in-out;
+    }
+    .btn_order {
+      a {
+        text-decoration: none;
+        background-color: $price-blue;
+        color: $white;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+        border: 1px solid $price-blue;
+      }
+    }
+    .per_month {
+      background-color: $price-blue;
+      transition: 1s;
+      transition-timing-function: ease-in-out;
+      border: 1px solid $price-blue;
+      span {
+        color: $white;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+      }
+      sup {
+        color: $white;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+      }
+      p {
+        color: $white;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+      }
+    }
+  }
+}
+@mixin button-style {
+  color: $white;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: transparent;
+  border: 1px solid $button-border;
+  border-radius: 3px;
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+@mixin button-active{
+  color: $white;
+  text-decoration: none;
+  background: $price-blue;
+  border: 1px solid $price-blue;
+  transition: .5s;
+  transition-timing-function: ease-in-out;
+}
+@mixin border {
+  content: "";
+  position: absolute;
+  width: 20px;
+  border-bottom: 2px solid $blue-nav;
+}
+@mixin contact_us-p {
+  text-decoration: none;
+  color: $cont-a-color;
+}
+@mixin blue-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+@mixin blue-lines-center{
+  .blue_lines_wrap{
+    margin: 0 auto;
+  }
+}
+@mixin blue-lines{
+  .blue_lines_wrap {
+    margin: 0;
+  }
+  .blue_lines_wrap .first_wrapper {
+    display: inline-block;
+    margin-right: 0;
+  }
+  .blue_lines_wrap .second_wrapper {
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+@mixin awesome-active {
+  color: $price-blue;
+  transition: .8s;
+  transition-timing-function: ease-in-out;
+}
+@mixin footer-a-active {
+  text-decoration: none;
+  color: $footer-text;
+}
+@mixin input-focus{
+  border: 1px solid $white;
+}

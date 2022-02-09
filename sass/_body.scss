@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+
+  .blue_text {
+    color: $blue-nav;
+  }
+
+  .blue_lines {
+    width: 100%;
+    display: flex;
+
+    .blue_lines_wrap {
+      margin: 0 auto;
+
+      .first_wrapper {
+        display: inline-block;
+        margin-right: .05rem;
+      }
+
+      .second_wrapper {
+        display: inline-block;
+        margin-left: .05rem;
+      }
+    }
+  }
+
+  .owl-stage {
+    animation: fadeIn ease 1s;
+
+    0% {
+      opacity: 0;
+    }
+
+    transition: 1s;
+  }
+
+  .owl-stage .active {
+    animation: fadeIn ease 1s;
+
+    100% {
+      opacity: 1;
+    }
+
+    transition: 1s;
+  }
+
+  .fas, .fab {
+    font-family: 'FontAwesome';
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .message {
+    form {
+      input {
+        display: block;
+        font-size: 14px;
+        color: $input-bg;
+        font-weight: 400;
+        width: 300px;
+        height: 50px;
+        background-color: $contact_form-color;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #submit {
+        background: $contact_form-color;
+        margin-top: 22px;
+        color: $white;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      textarea {
+        display: block;
+        font-size: 14px;
+        color: black;
+        font-weight: 400;
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+    }
+  }
+}
