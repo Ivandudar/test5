@@ -714,6 +714,7 @@ hr {
   padding: 0;
   display: flex;
   background: $contact_form-color;
+  overflow: hidden;
   .form_label{
     width: 770px;
   }

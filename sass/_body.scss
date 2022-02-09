@@ -3,6 +3,7 @@ html {
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 
   .blue_text {
     color: $blue-nav;
